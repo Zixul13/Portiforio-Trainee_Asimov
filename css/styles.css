@@ -1,0 +1,458 @@
+
+
+html,body {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    background-color:darkgray;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navigation {
+    background-color:rgb(54, 54, 54);
+    color:white;
+    height: 50px;
+    font-size: 16px;
+
+    animation-name: Navegacao;
+    animation-duration: 1s;
+}
+
+.navigation ul{
+    margin-top:0;
+    list-style:none;
+    padding-left:0;
+    text-align: right;
+    height: 50px;
+}
+
+.navigation li{
+    display:inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+}
+
+.navigation a {
+    color:white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color:royalblue;
+}
+
+.navigation li.threeline {
+    display:none;
+
+}
+
+.navigation li.threeline:hover {
+    color:royalblue;
+    cursor:pointer;
+}
+
+
+
+
+.menu {
+    color:white;
+    background-color:rgb(73, 73, 73);
+    margin-top:0px;
+    list-style:none;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-bottom:2px;
+    text-align: left;
+    height: 30px;
+
+    animation-name: profile-capa;
+    animation-duration: 2s;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.capa {
+    color:white;
+}
+
+.capa span {
+    Color:royalblue;
+    display: block;
+}
+
+.capa div {
+    display: inline-block;
+    height:650px;
+}
+
+
+.profile-pic img{
+    width: 360px;
+    border-radius: 360px;
+    margin-top: 110px;
+}
+
+.profile-pic {
+    width:40%;
+    text-align: center;
+
+    animation-name: profile-capa;
+    animation-duration: 3s;
+}
+
+.profile-title{
+    vertical-align: top;
+    width: 59%;
+
+    animation-name: profile-capa;
+    animation-duration: 3s;
+}
+
+.profile-title h1 {
+    text-transform: uppercase;
+    font-size:58px;
+    margin-top: 200px;
+    line-height: 58px;
+}
+
+.profile-title h2 {
+    font-size:16px;
+    font-weight: 100px;
+    margin-top:-20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    padding: 0px 180px 100px 100px;
+
+    animation-name: page;
+    animation-duration: 2s;
+}
+
+.main h1 {
+    color:rgb(54, 54, 54);
+    font-weight:normal;
+    text-align: center;
+}
+
+.main h2 {
+    color:rgb(54, 54, 54);
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight:normal;
+    margin-top: 40px;
+}
+
+.main h3 {
+    Color:royalblue;
+    font-size:21px;
+    font-weight:normal;
+}
+
+.main p {
+    Color:white;
+    font-size:19px;
+    font-weight:100;
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+.eu2{
+    float:left;
+    width: 26%;
+}
+
+.dados {
+
+    width: 72%;
+    margin-left: 29%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.social-img {
+    width: 40px;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.miniatura {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+.blackbox{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    opacity:0;
+    padding-top: 130px;
+    transition: 1s;
+
+}
+
+.blackbox:hover{
+    opacity: 0.75;
+    transition: 1s;
+}
+
+.blackbox-text {
+    text-align: center;
+}
+
+
+.blackbox-text h1{
+    
+    font-size: 16px;
+    color:royalblue;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.blackbox-text h2{
+
+    font-size: 24px;
+    color:white;
+    text-transform: none;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mf {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:10px
+}
+
+
+
+
+
+.back {
+    
+    font-size: 16px;
+    color:royalblue;
+}
+
+
+
+
+
+@keyframes profile-capa {
+    0% {opacity:0;}
+    100% {opacity: 1;}
+}
+
+@keyframes Navegacao {
+    0% {transform: translate(0px,-60px)}
+    100% {transform: translate(0px,0px)}
+}
+
+@keyframes page {
+    0% {opacity: 0; transform: translate(-20px,0px)}
+    100% {opacity: 1; transform: translate(0px,0px)}
+}
+
+
+
+
+
+@media (max-width:1000px){
+
+.navigation ul{
+
+        text-align: center;
+}
+
+    .navigation li {
+    display:none;
+}
+
+.navigation li.threeline {
+    display: inline-block;
+}
+
+.capa div {
+    display: block;
+    height:auto;
+}
+
+.profile-pic {
+    width: 100%;
+}
+
+.profile-pic img {
+    margin-top:20px;
+    max-width: 80%;
+}
+
+.profile-title{
+    width: 100%;
+    text-align: center;
+}
+
+.profile-title h1{
+    margin-top:20px;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profile-title h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main {
+    padding: 10px 5% 0px 5%;
+}
+
+.main p {
+    text-align: left;
+    line-height: 16px;
+}
+
+.main h3 {
+    line-height: 14px;
+    font-size: 20px;
+}
+
+.menu {
+    font-size: 14px;
+}
+
+.eu2{
+    float:unset;
+    max-width: 100%;
+    
+}
+
+.dados {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+
+
+
+
+
+.miniatura{
+    max-width: 100%;
+    background-size: auto 100%;
+}
+
+.blackbox {
+    opacity: 0.75;
+}
+
+
+
+
+
+.menujs {
+
+    height: auto;
+
+
+}
+
+.menujs ul{
+
+    height: auto;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.menujs li{
+
+    display:block;
+    border-bottom:solid darkgray 1px;
+    width: 100%;
+    padding:0;
+
+
+}
+
+
+}
